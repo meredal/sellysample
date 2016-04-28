@@ -1,9 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
 body {
-  background: #2C3E50;
+  background: #fff;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 // h1 48 OpenSans Light
@@ -13,10 +15,10 @@ body {
 // h5 16 OpenSans Light
 // h6 georgia italic 14
 
-h1, h2, h3, h4, h5, h6, a, button, img {
+h1, h2, h3, h4, h5, h6, a, button, img, ul, li {
   margin: 0;
   padding: 0;
-  // color: #363636;
+  color: #363636;
 }
 
 button {
@@ -29,12 +31,10 @@ button {
   height: 72px;
   border-radius: 4px;
   border: none;
-  box-shadow: inset 0px 3px 0px 0px rgba(59, 212, 182, 0.004);
+  box-shadow: inset 0px -3px 0px 0px rgba(59, 212, 182, 1);
   &:hover {
   background-color: #19b596;}
 }
-
-// Is the box shadow showing or not?
 
 h1 {
   font-size: 48px;
@@ -73,6 +73,7 @@ h6 {
   width: 100%;
   height: auto;
   text-align: center;
+  background: #2C3E50;
   .logo {
     margin: 124px 0 30px 0;
     padding: 0;
@@ -88,6 +89,7 @@ h6 {
     border: 2px solid #fff;
     background-color: #22303d;
     margin-left: 12px;
+    box-shadow: none;
     &:hover {
       background-color: #141d25;
     }
@@ -96,15 +98,60 @@ h6 {
     display: block;
     margin: 115px 0 100px 0;
   }
+  .stripes {
+    width: 100%;
+    display: block;
+  }
 }
 
+.page-content {
+  position: relative;
+  padding-right: 190px;
+}
+
+// TM symbol needs to be adjusted
+
 #sidebar {
-  background: e4e8ea;
+  background: #e4e8ea;
+  position: absolute;
+  right: 0;
+  width: 190px;
+  height: 100%;
+  text-align: center;
+  color: #757575;
+  .sidebar-logo {
+    margin: 124px 0 64px 0;
+  }
+  ul {
+    font-size: 12px;
+    list-style: none;
+    line-height: 5.1666666;
+  }
+  li {
+    span {
+      display: block;
+      width: 30px;
+      height: 1px;
+      background: #757575;
+      margin: 0 auto;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .sidebar-email-icon {
+    margin-top: 80px;
+  }
+}
+
+
+#lorem-dolor, #gravida, #ut-sagittis, #sign-up, #vel-bibendum, #cta-last {
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 #lorem-dolor, #gravida, #ut-sagittis, #vel-bibendum, #cta-last {
   background: #fff;
-  width: 1400px;
   text-decoration-color: #363636;
 }
 
