@@ -111,12 +111,20 @@ h6 {
   max-width: 850px;
   margin: 0 auto; }
 
-#lorem-dolor, #gravida, #ut-sagittis, #vel-bibendum, #cta-last {
-  background: #fff;
-  text-decoration-color: #363636; }
-
 #lorem-dolor {
-  height: 722px; }
+  height: 800px; }
+  #lorem-dolor .phone, #lorem-dolor .lorem-dolor-text {
+    display: inline-block; }
+  #lorem-dolor .lorem-dolor-text {
+    width: 500px; }
+    #lorem-dolor .lorem-dolor-text .icon {
+      margin: 0 10px 0 30px; }
+    #lorem-dolor .lorem-dolor-text h5 {
+      margin: 30px 0; }
+    #lorem-dolor .lorem-dolor-text .down-arrow {
+      margin-bottom: 180px; }
+  #lorem-dolor .phone {
+    margin-top: 140px; }
 
 #gravida {
   height: 786px; }
