@@ -36,6 +36,14 @@ button {
   background-color: #19b596;}
 }
 
+h1, h4, h5, h6 {
+  text-transform: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 100;
+}
+
 h1 {
   font-size: 48px;
   color: #fff;
@@ -43,15 +51,11 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 33.5px;
 }
 
 h3 {
   font-size: 24px;
-}
-
-h1, h4, h5, h6 {
-  text-transform: none;
 }
 
 h4 {
@@ -60,6 +64,8 @@ h4 {
 
 h5 {
   font-size: 16px;
+  margin: 15px 0 20px 0;
+  line-height: 1.75;
 }
 
 h6 {
@@ -69,9 +75,13 @@ h6 {
   font-style: italic;
 }
 
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
 #header {
   width: 100%;
-  height: auto;
   text-align: center;
   background: #2C3E50;
   .logo {
@@ -108,8 +118,6 @@ h6 {
   position: relative;
   padding-right: 190px;
 }
-
-// TM symbol needs to be adjusted
 
 #sidebar {
   background: #e4e8ea;
@@ -150,7 +158,6 @@ h6 {
 }
 
 #lorem-dolor {
-  height: 800px;
   .phone, .lorem-dolor-text {
     display: inline-block;
   }
@@ -158,9 +165,6 @@ h6 {
     width: 500px;
     .icon {
       margin: 0 10px 0 30px;
-    }
-    h5 {
-      margin: 30px 0;
     }
     .down-arrow {
       margin-bottom: 180px;
@@ -172,21 +176,100 @@ h6 {
 }
 
 #gravida {
-  height: 786px;
+  .phone, .gravida-text {
+    display: inline-block;
+  }
+  .phone {
+    margin: 209px 30px 0 0;
+  }
+  .gravida-text {
+    width: 490px;
+    .down-arrow {
+      margin-bottom: 200px;
+    }
+  }
 }
 
 #ut-sagittis {
-  height: 945px;
+  text-align: center;
+  h6 {
+    margin-top: 203px;
+  }
+  .person1, .person2, .person3 {
+    display: inline-block;
+    width: 240px;
+    margin: 45px 0 20px 0;
+    img {
+      margin-bottom: 28px;
+    }
+    h6 {
+      margin-top: 8px;
+      line-height: 1.714;
+    }
+  }
+  .person2 {
+    margin: 0 32px;
+  }
+  a {
+    display: block;
+    margin-bottom: 206px;
+  }
 }
 
-#sign-up {
-  height: 440px;
+.sign-up-box {
+  width: 100%;
+  background: #2c3e50;
+  #sign-up {
+    text-align: center;
+    h2, h4 {
+      color: #fff;
+    }
+    h2 {
+      padding: 105px 0 18px 0;
+    }
+    h4 {
+      padding-bottom: 56px;
+    }
+    form {
+      .email-wrapper {
+        display: inline-block;
+      }
+      input {
+        font-family: inherit;
+        font-size: 16px;
+        display: inline-block;
+        border: none;
+        &[type=email], &[type=submit] {
+          height: 72px;
+        }
+        &[type=email] {
+          width: 480px;
+          color: #999999;
+          border-radius: 4px 0 0 4px;
+          border: 1px solid #000;
+        }
+        &[type=submit] {
+          text-transform: uppercase;
+          color: #fff;
+          background-color: #16a085;
+          width: 204px;
+          border: none;
+          border-radius: 0 4px 4px 0;
+          box-shadow: inset 0px -3px 0px 0px rgba(59, 212, 182, 1);
+          &:hover {
+          background-color: #19b596;}
+        }
+      }
+    }
+  }
+  .stripes {
+    width: 100%;
+    display: block;
+  }
 }
 
 #vel-bibendum {
-  height: 1056px;
 }
 
 #cta-last {
-  height: 476px;
 }

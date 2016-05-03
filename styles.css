@@ -25,25 +25,30 @@ button {
   button:hover {
     background-color: #19b596; }
 
+h1, h4, h5, h6 {
+  text-transform: none; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 100; }
+
 h1 {
   font-size: 48px;
   color: #fff;
   line-height: 1.3; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 33.5px; }
 
 h3 {
   font-size: 24px; }
-
-h1, h4, h5, h6 {
-  text-transform: none; }
 
 h4 {
   font-size: 18px; }
 
 h5 {
-  font-size: 16px; }
+  font-size: 16px;
+  margin: 15px 0 20px 0;
+  line-height: 1.75; }
 
 h6 {
   font-family: Georgia, serif;
@@ -51,9 +56,12 @@ h6 {
   font-weight: 300;
   font-style: italic; }
 
+sup {
+  vertical-align: super;
+  font-size: smaller; }
+
 #header {
   width: 100%;
-  height: auto;
   text-align: center;
   background: #2C3E50; }
   #header .logo {
@@ -111,34 +119,82 @@ h6 {
   max-width: 850px;
   margin: 0 auto; }
 
-#lorem-dolor {
-  height: 800px; }
-  #lorem-dolor .phone, #lorem-dolor .lorem-dolor-text {
-    display: inline-block; }
-  #lorem-dolor .lorem-dolor-text {
-    width: 500px; }
-    #lorem-dolor .lorem-dolor-text .icon {
-      margin: 0 10px 0 30px; }
-    #lorem-dolor .lorem-dolor-text h5 {
-      margin: 30px 0; }
-    #lorem-dolor .lorem-dolor-text .down-arrow {
-      margin-bottom: 180px; }
-  #lorem-dolor .phone {
-    margin-top: 140px; }
+#lorem-dolor .phone, #lorem-dolor .lorem-dolor-text {
+  display: inline-block; }
+#lorem-dolor .lorem-dolor-text {
+  width: 500px; }
+  #lorem-dolor .lorem-dolor-text .icon {
+    margin: 0 10px 0 30px; }
+  #lorem-dolor .lorem-dolor-text .down-arrow {
+    margin-bottom: 180px; }
+#lorem-dolor .phone {
+  margin-top: 140px; }
 
-#gravida {
-  height: 786px; }
+#gravida .phone, #gravida .gravida-text {
+  display: inline-block; }
+#gravida .phone {
+  margin: 209px 30px 0 0; }
+#gravida .gravida-text {
+  width: 490px; }
+  #gravida .gravida-text .down-arrow {
+    margin-bottom: 200px; }
 
 #ut-sagittis {
-  height: 945px; }
+  text-align: center; }
+  #ut-sagittis h6 {
+    margin-top: 203px; }
+  #ut-sagittis .person1, #ut-sagittis .person2, #ut-sagittis .person3 {
+    display: inline-block;
+    width: 240px;
+    margin: 45px 0 20px 0; }
+    #ut-sagittis .person1 img, #ut-sagittis .person2 img, #ut-sagittis .person3 img {
+      margin-bottom: 28px; }
+    #ut-sagittis .person1 h6, #ut-sagittis .person2 h6, #ut-sagittis .person3 h6 {
+      margin-top: 8px;
+      line-height: 1.714; }
+  #ut-sagittis .person2 {
+    margin: 0 32px; }
+  #ut-sagittis a {
+    display: block;
+    margin-bottom: 206px; }
 
-#sign-up {
-  height: 440px; }
-
-#vel-bibendum {
-  height: 1056px; }
-
-#cta-last {
-  height: 476px; }
+.sign-up-box {
+  width: 100%;
+  background: #2c3e50; }
+  .sign-up-box #sign-up {
+    text-align: center; }
+    .sign-up-box #sign-up h2, .sign-up-box #sign-up h4 {
+      color: #fff; }
+    .sign-up-box #sign-up h2 {
+      padding: 105px 0 18px 0; }
+    .sign-up-box #sign-up h4 {
+      padding-bottom: 56px; }
+    .sign-up-box #sign-up form .email-wrapper {
+      display: inline-block; }
+    .sign-up-box #sign-up form input {
+      font-family: inherit;
+      font-size: 16px;
+      display: inline-block;
+      border: none; }
+      .sign-up-box #sign-up form input[type=email], .sign-up-box #sign-up form input[type=submit] {
+        height: 72px; }
+      .sign-up-box #sign-up form input[type=email] {
+        width: 480px;
+        color: #999999;
+        border-radius: 4px 0 0 4px;
+        border: 1px solid #000; }
+      .sign-up-box #sign-up form input[type=submit] {
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #16a085;
+        width: 204px;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        box-shadow: inset 0px -3px 0px 0px #3bd4b6; }
+        .sign-up-box #sign-up form input[type=submit]:hover {
+          background-color: #19b596; }
+  .sign-up-box .stripes {
+    width: 100%;
+    display: block; }
 
 /*# sourceMappingURL=styles.css.map */
