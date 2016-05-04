@@ -21,7 +21,8 @@ button {
   height: 72px;
   border-radius: 4px;
   border: none;
-  box-shadow: inset 0px -3px 0px 0px #3bd4b6; }
+  box-shadow: inset 0px -3px 0px 0px #3bd4b6;
+  cursor: pointer; }
   button:hover {
     background-color: #19b596; }
 
@@ -65,7 +66,12 @@ sup {
 #header {
   width: 100%;
   text-align: center;
-  background: #2C3E50; }
+  background-color: #2C3E50;
+  background-image: url(/images/stripes.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  padding-bottom: 100px; }
   #header .logo {
     margin: 124px 0 30px 0;
     padding: 0; }
@@ -83,10 +89,8 @@ sup {
       background-color: #141d25; }
   #header a {
     display: block;
-    margin: 115px 0 100px 0; }
-  #header .stripes {
-    width: 100%;
-    display: block; }
+    margin: 115px auto 100px;
+    width: 48px; }
 
 .page-content {
   position: relative;
@@ -121,7 +125,7 @@ sup {
   max-width: 850px;
   margin: 0 auto; }
 
-#vel-bibendum {
+#vel-bibendum, #footer {
   max-width: 900px;
   margin: 0 auto; }
 
@@ -166,7 +170,11 @@ sup {
 
 .sign-up-box {
   width: 100%;
-  background: #2c3e50; }
+  background-color: #2C3E50;
+  background-image: url(/images/stripes.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
   .sign-up-box #sign-up {
     text-align: center; }
     .sign-up-box #sign-up h2, .sign-up-box #sign-up h4 {
@@ -209,9 +217,6 @@ sup {
       display: block;
       visibility: hidden;
       padding: 10px 0 50px 0; }
-  .sign-up-box .stripes {
-    width: 100%;
-    display: block; }
 
 #vel-bibendum {
   text-align: center; }
@@ -241,14 +246,53 @@ sup {
   #vel-bibendum .opinion4 {
     margin: 31px 0 0 27px; }
 
-#cta-last {
-  text-align: center;
-  border-bottom: 1px solid black; }
-  #cta-last h3 {
-    margin-top: 140px; }
-  #cta-last h6 {
-    line-height: 2; }
-  #cta-last button {
-    margin: 60px 0 100px 0; }
+.cta-last-box {
+  border-bottom: 1px solid #e1e1e1; }
+  .cta-last-box #cta-last {
+    text-align: center; }
+    .cta-last-box #cta-last h3 {
+      margin-top: 140px; }
+    .cta-last-box #cta-last h6 {
+      line-height: 2; }
+    .cta-last-box #cta-last button {
+      margin: 60px 0 100px 0; }
+
+#footer {
+  font-size: 14px;
+  text-transform: none; }
+  #footer ul, #footer li, #footer p {
+    display: inline-block; }
+  #footer li, #footer p {
+    color: #8a8a8a; }
+  #footer li {
+    padding: 40px 0 45px 0;
+    margin: 0 10px; }
+    #footer li:first-child {
+      margin-left: 0; }
+    #footer li a {
+      text-decoration: none; }
+  #footer button {
+    margin-left: 145px;
+    text-transform: none;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    font-size: 11px;
+    text-align: left;
+    color: #323232;
+    width: 106px;
+    height: 22px;
+    border-radius: 3px;
+    border: solid 1px #cccccc;
+    background-image: -moz-linear-gradient(90deg, #e3e3e3 0%, white 96%);
+    background-image: -webkit-linear-gradient(90deg, #e3e3e3 0%, white 96%);
+    background-image: -ms-linear-gradient(90deg, #e3e3e3 0%, white 96%);
+    background-color: #19b596;
+    box-shadow: none; }
+    #footer button img {
+      position: relative;
+      top: 2px;
+      padding: 0 4px; }
+  #footer p {
+    margin-left: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
