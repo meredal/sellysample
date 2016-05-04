@@ -48,13 +48,15 @@ h4 {
 h5 {
   font-size: 16px;
   margin: 15px 0 20px 0;
-  line-height: 1.75; }
+  line-height: 1.75;
+  color: #777777; }
 
 h6 {
   font-family: Georgia, serif;
   font-size: 14px;
   font-weight: 300;
-  font-style: italic; }
+  font-style: italic;
+  color: #8a8a8a; }
 
 sup {
   vertical-align: super;
@@ -115,8 +117,12 @@ sup {
   #sidebar .sidebar-email-icon {
     margin-top: 80px; }
 
-#lorem-dolor, #gravida, #ut-sagittis, #sign-up, #vel-bibendum, #cta-last {
+#lorem-dolor, #gravida, #ut-sagittis, #sign-up, #cta-last {
   max-width: 850px;
+  margin: 0 auto; }
+
+#vel-bibendum {
+  max-width: 900px;
   margin: 0 auto; }
 
 #lorem-dolor .phone, #lorem-dolor .lorem-dolor-text {
@@ -170,20 +176,26 @@ sup {
     .sign-up-box #sign-up h4 {
       padding-bottom: 56px; }
     .sign-up-box #sign-up form .email-wrapper {
-      display: inline-block; }
+      display: inline-block;
+      background: url(/images/envelope-icon.png) no-repeat 20px center;
+      background-color: #fff;
+      border-radius: 4px 0 0 4px; }
     .sign-up-box #sign-up form input {
       font-family: inherit;
       font-size: 16px;
       display: inline-block;
       border: none; }
-      .sign-up-box #sign-up form input[type=email], .sign-up-box #sign-up form input[type=submit] {
-        height: 72px; }
       .sign-up-box #sign-up form input[type=email] {
-        width: 480px;
+        width: 410px;
+        height: 69px;
         color: #999999;
+        background: none;
         border-radius: 4px 0 0 4px;
-        border: 1px solid #000; }
+        border: 1px solid #000;
+        border-right: none;
+        padding-left: 70px; }
       .sign-up-box #sign-up form input[type=submit] {
+        height: 71px;
         text-transform: uppercase;
         color: #fff;
         background-color: #16a085;
@@ -193,8 +205,50 @@ sup {
         box-shadow: inset 0px -3px 0px 0px #3bd4b6; }
         .sign-up-box #sign-up form input[type=submit]:hover {
           background-color: #19b596; }
+    .sign-up-box #sign-up form .email-message {
+      display: block;
+      visibility: hidden;
+      padding: 10px 0 50px 0; }
   .sign-up-box .stripes {
     width: 100%;
     display: block; }
+
+#vel-bibendum {
+  text-align: center; }
+  #vel-bibendum h6:first-child {
+    padding-top: 210px; }
+  #vel-bibendum h2 {
+    padding-bottom: 45px; }
+  #vel-bibendum a {
+    color: #16a085;
+    text-decoration: none; }
+  #vel-bibendum .opinion1, #vel-bibendum .opinion2, #vel-bibendum .opinion3, #vel-bibendum .opinion4 {
+    width: 410px;
+    height: 330px;
+    border: 1px solid #e1e1e1;
+    display: inline-block; }
+    #vel-bibendum .opinion1 img, #vel-bibendum .opinion2 img, #vel-bibendum .opinion3 img, #vel-bibendum .opinion4 img {
+      padding: 46px 0 13px 0; }
+    #vel-bibendum .opinion1 h6:last-child, #vel-bibendum .opinion2 h6:last-child, #vel-bibendum .opinion3 h6:last-child, #vel-bibendum .opinion4 h6:last-child {
+      padding: 30px;
+      line-height: 1.714; }
+  #vel-bibendum .opinion1 {
+    margin: 0 27px 31px 0; }
+  #vel-bibendum .opinion2 {
+    margin: 0 0 31px 27px; }
+  #vel-bibendum .opinion3 {
+    margin: 31px 27px 0 0; }
+  #vel-bibendum .opinion4 {
+    margin: 31px 0 0 27px; }
+
+#cta-last {
+  text-align: center;
+  border-bottom: 1px solid black; }
+  #cta-last h3 {
+    margin-top: 140px; }
+  #cta-last h6 {
+    line-height: 2; }
+  #cta-last button {
+    margin: 60px 0 100px 0; }
 
 /*# sourceMappingURL=styles.css.map */

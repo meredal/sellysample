@@ -18,7 +18,7 @@ body {
 h1, h2, h3, h4, h5, h6, a, button, img, ul, li {
   margin: 0;
   padding: 0;
-  color: #363636;
+  color: #363636
 }
 
 button {
@@ -66,6 +66,7 @@ h5 {
   font-size: 16px;
   margin: 15px 0 20px 0;
   line-height: 1.75;
+  color: #777777;
 }
 
 h6 {
@@ -73,6 +74,7 @@ h6 {
   font-size: 14px;
   font-weight: 300;
   font-style: italic;
+  color: #8a8a8a;
 }
 
 sup {
@@ -152,8 +154,13 @@ sup {
   }
 }
 
-#lorem-dolor, #gravida, #ut-sagittis, #sign-up, #vel-bibendum, #cta-last {
+#lorem-dolor, #gravida, #ut-sagittis, #sign-up, #cta-last {
   max-width: 850px;
+  margin: 0 auto;
+}
+
+#vel-bibendum {
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -233,6 +240,9 @@ sup {
     form {
       .email-wrapper {
         display: inline-block;
+        background: url(/images/envelope-icon.png) no-repeat 20px center;
+        background-color: #fff;
+        border-radius: 4px 0 0 4px;
       }
       input {
         font-family: inherit;
@@ -240,15 +250,19 @@ sup {
         display: inline-block;
         border: none;
         &[type=email], &[type=submit] {
-          height: 72px;
         }
         &[type=email] {
-          width: 480px;
+          width: 410px;
+          height: 69px;
           color: #999999;
+          background: none;
           border-radius: 4px 0 0 4px;
           border: 1px solid #000;
+          border-right: none;
+          padding-left: 70px;
         }
         &[type=submit] {
+          height: 71px;
           text-transform: uppercase;
           color: #fff;
           background-color: #16a085;
@@ -260,6 +274,11 @@ sup {
           background-color: #19b596;}
         }
       }
+      .email-message {
+        display: block;
+        visibility: hidden;
+        padding: 10px 0 50px 0;
+      }
     }
   }
   .stripes {
@@ -269,7 +288,58 @@ sup {
 }
 
 #vel-bibendum {
+  text-align: center;
+  h6 {
+    &:first-child {
+      padding-top: 210px;
+    }
+  }
+  h2 {
+    padding-bottom: 45px;
+  }
+  a {
+    color: #16a085;
+    text-decoration: none;
+  }
+  .opinion1, .opinion2, .opinion3, .opinion4 {
+    width: 410px;
+    height: 330px;
+    border: 1px solid #e1e1e1;
+    display: inline-block;
+    img {
+      padding: 46px 0 13px 0;
+    }
+    h6 {
+      &:last-child {
+        padding: 30px;
+        line-height: 1.714;
+      }
+    }
+  }
+  .opinion1 {
+    margin: 0 27px 31px 0;
+  }
+  .opinion2 {
+    margin: 0 0 31px 27px;
+  }
+  .opinion3 {
+    margin: 31px 27px 0 0;
+  }
+  .opinion4 {
+    margin: 31px 0 0 27px;
+  }
 }
 
 #cta-last {
+  text-align: center;
+  border-bottom: 1px solid black;
+  h3 {
+    margin-top: 140px;
+  }
+  h6 {
+    line-height: 2;
+  }
+  button {
+    margin: 60px 0 100px 0;
+  }
 }
