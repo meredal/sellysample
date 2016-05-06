@@ -9,7 +9,7 @@ body {
 }
 
 // h1 48 OpenSans Light
-// h2 36 OpenSans Light caps
+// h2 33.5 OpenSans Light caps
 // h3 24 OpenSans Light caps
 // h4 18 OpenSans Light
 // h5 16 OpenSans Light
@@ -91,7 +91,7 @@ sup {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding-bottom: 100px;
+  padding-bottom: 1px;
   .logo {
     margin: 124px 0 30px 0;
     padding: 0;
@@ -202,6 +202,7 @@ sup {
 
 #ut-sagittis {
   text-align: center;
+  padding-bottom: 206px;
   h6 {
     margin-top: 203px;
   }
@@ -222,7 +223,8 @@ sup {
   }
   a {
     display: block;
-    margin-bottom: 206px;
+    margin: 0 auto;
+    width: 50px;
   }
 }
 
@@ -246,11 +248,14 @@ sup {
       padding-bottom: 56px;
     }
     form {
+      padding-bottom: 50px;
       .email-wrapper {
         display: inline-block;
         background: url(/images/envelope-icon.png) no-repeat 20px center;
         background-color: #fff;
         border-radius: 4px 0 0 4px;
+        border: 1px solid #000;
+        border-right: none;
       }
       input {
         font-family: inherit;
@@ -265,8 +270,6 @@ sup {
           color: #999999;
           background: none;
           border-radius: 4px 0 0 4px;
-          border: 1px solid #000;
-          border-right: none;
           padding-left: 70px;
         }
         &[type=submit] {
@@ -283,9 +286,20 @@ sup {
         }
       }
       .email-message {
-        display: block;
+        background-color: #f26c4f;
+        padding: 10px 0;
+        width: 691px;
+        border-radius: 4px;
+        margin: 10px auto;
         visibility: hidden;
-        padding: 10px 0 50px 0;
+        h6 {
+          color: #fff;
+          display: inline-block;
+        }
+        img {
+          position: relative;
+          top: 4px;
+        }
       }
     }
   }
@@ -393,5 +407,271 @@ sup {
   }
   p {
     margin-left: 10px;
+  }
+}
+
+
+// breaks at 1400, 1100, 980, 768, 480 px
+
+@media screen and (max-width: 1439px) {
+  #header {
+    h1 {
+      width: 80%;
+      margin: 0 auto;
+    }
+    h4 {
+      width: 80%;
+      margin: 25px auto 100px;
+    }
+  }
+  #ut-sagittis {
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  h2 {
+    font-size: 30px;
+  }
+  #header {
+    h4 {
+      margin: 25px auto 50px;
+    }
+    .logo {
+      margin: 100px 0 20px 0;
+    }
+    a {
+      margin: 50px auto;
+    }
+  }
+  .page-content {
+    padding-right: 150px;
+  }
+  #sidebar {
+    width: 150px;
+  }
+  #lorem-dolor {
+    .phone {
+      max-height: 500px;
+      margin-top: 100px;
+    }
+    .lorem-dolor-text {
+      margin-left: 20px;
+    }
+  }
+  #gravida {
+    .phone {
+      max-height: 500px;
+      margin: 100px 30px 0 20px;
+    }
+  }
+  #ut-sagittis {
+    padding-bottom: 50px;
+    h6 {
+      margin-top: 100px;
+    }
+  }
+  .sign-up-box {
+    #sign-up {
+      h2 {
+        padding: 100px 0 18px 0;
+      }
+      form .email-message {
+        padding: 10px 0;
+      }
+    }
+  }
+  #vel-bibendum {
+    h6:first-child {
+      padding-top: 100px;
+    }
+    h2 {
+      padding-bottom: 0;
+    }
+    .opinion1, .opinion2, .opinion3, .opinion4 {
+      margin: 25px auto;
+    }
+  }
+  .cta-last-box {
+    #cta-last {
+      h3 {
+        margin-top: 100px;
+      }
+    }
+  }
+  #footer {
+    ul {
+      margin-left: 20px;
+    }
+    button {
+      margin-left: 10px;
+    }
+  }
+}
+@media screen and (max-width: 979px) {
+  #header {
+    h1 {
+      font-size: 44px;
+    }
+    .logo {
+      margin: 50px 0 20px 0;
+    }
+  }
+  .page-content {
+    padding: 0;
+  }
+  #sidebar {
+    display: none;
+  }
+  #lorem-dolor {
+    .phone {
+      margin-top: 50px;
+    }
+    .lorem-dolor-text {
+      width: 475px;
+      .down-arrow {
+        margin-bottom: 150px;
+      }
+    }
+  }
+  #gravida {
+    .phone {
+      margin: 50px 20px 0 20px;
+    }
+    .gravida-text {
+      width: 475px;
+      .down-arrow {
+        margin-bottom: 150px;
+      }
+    }
+  }
+  #ut-sagittis {
+    .person1, .person2, .person3 {
+      display: block;
+      margin: 50px auto;
+      img {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  #vel-bibendum {
+    h6:first-child {
+      padding-top: 50px;
+    }
+  }
+  .cta-last-box {
+    #cta-last {
+      button {
+        margin: 60px 0;
+      }
+    }
+  }
+  #footer {
+    li {
+      padding: 30px 0 40px 0;
+      margin: 0 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #header {
+    button {
+      width: 40%;
+    }
+    h1 {
+      font-size: 38px;
+    }
+  }
+  #lorem-dolor {
+    text-align: center;
+    .phone {
+      display: none;
+    }
+    .lorem-dolor-text {
+      width: 90%;
+      margin-left: 0;
+      h6 {
+        margin-top: 50px;
+      }
+      .icon {
+        display: none;
+      }
+      .down-arrow {
+        display: block;
+        margin: 0 auto 100px auto
+      }
+    }
+  }
+  #gravida {
+    text-align: center;
+    .phone {
+      display: none;
+    }
+    .gravida-text {
+      width: 100%;
+      .down-arrow {
+        display: block;
+        margin: 0 auto 100px auto
+      }
+    }
+  }
+  #ut-sagittis {
+    h6 {
+      margin-top: 0;
+    }
+  }
+  #vel-bibendum {
+    .opinion1, .opinion2, .opinion3, .opinion4 {
+      width: 90%;
+    }
+  }
+  .sign-up-box {
+    #sign-up {
+      h2 {
+        padding: 50px 0 18px 0;
+      }
+      h4 {
+        padding-bottom: 50px;
+      }
+      form {
+        padding-bottom: 5px;
+        .email-message {
+          padding: 10px 0;
+          width: 80%;
+          margin: 0 auto;
+        }
+        .email-wrapper {
+          width: 80%;
+          border-radius: 4px;
+          margin-bottom: 20px;
+        }
+        input[type=email] {
+          width: 80%;
+          border-radius: 4px;
+          border: none;
+        }
+        input[type=submit] {
+          margin-bottom: 20px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  #footer {
+    text-align: center;
+    ul {
+      margin: 10px auto 20px;
+      width: 80%;
+    }
+    li {
+      padding: 5px 0;
+    }
+    button {
+      margin-left: 0;
+    }
+    p {
+      margin-top: 0;
+    }
   }
 }

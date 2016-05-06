@@ -71,7 +71,7 @@ sup {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  padding-bottom: 100px; }
+  padding-bottom: 1px; }
   #header .logo {
     margin: 124px 0 30px 0;
     padding: 0; }
@@ -150,7 +150,8 @@ sup {
     margin-bottom: 200px; }
 
 #ut-sagittis {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 206px; }
   #ut-sagittis h6 {
     margin-top: 203px; }
   #ut-sagittis .person1, #ut-sagittis .person2, #ut-sagittis .person3 {
@@ -166,7 +167,8 @@ sup {
     margin: 0 32px; }
   #ut-sagittis a {
     display: block;
-    margin-bottom: 206px; }
+    margin: 0 auto;
+    width: 50px; }
 
 .sign-up-box {
   width: 100%;
@@ -183,40 +185,51 @@ sup {
       padding: 105px 0 18px 0; }
     .sign-up-box #sign-up h4 {
       padding-bottom: 56px; }
-    .sign-up-box #sign-up form .email-wrapper {
-      display: inline-block;
-      background: url(/images/envelope-icon.png) no-repeat 20px center;
-      background-color: #fff;
-      border-radius: 4px 0 0 4px; }
-    .sign-up-box #sign-up form input {
-      font-family: inherit;
-      font-size: 16px;
-      display: inline-block;
-      border: none; }
-      .sign-up-box #sign-up form input[type=email] {
-        width: 410px;
-        height: 69px;
-        color: #999999;
-        background: none;
+    .sign-up-box #sign-up form {
+      padding-bottom: 50px; }
+      .sign-up-box #sign-up form .email-wrapper {
+        display: inline-block;
+        background: url(/images/envelope-icon.png) no-repeat 20px center;
+        background-color: #fff;
         border-radius: 4px 0 0 4px;
         border: 1px solid #000;
-        border-right: none;
-        padding-left: 70px; }
-      .sign-up-box #sign-up form input[type=submit] {
-        height: 71px;
-        text-transform: uppercase;
-        color: #fff;
-        background-color: #16a085;
-        width: 204px;
-        border: none;
-        border-radius: 0 4px 4px 0;
-        box-shadow: inset 0px -3px 0px 0px #3bd4b6; }
-        .sign-up-box #sign-up form input[type=submit]:hover {
-          background-color: #19b596; }
-    .sign-up-box #sign-up form .email-message {
-      display: block;
-      visibility: hidden;
-      padding: 10px 0 50px 0; }
+        border-right: none; }
+      .sign-up-box #sign-up form input {
+        font-family: inherit;
+        font-size: 16px;
+        display: inline-block;
+        border: none; }
+        .sign-up-box #sign-up form input[type=email] {
+          width: 410px;
+          height: 69px;
+          color: #999999;
+          background: none;
+          border-radius: 4px 0 0 4px;
+          padding-left: 70px; }
+        .sign-up-box #sign-up form input[type=submit] {
+          height: 71px;
+          text-transform: uppercase;
+          color: #fff;
+          background-color: #16a085;
+          width: 204px;
+          border: none;
+          border-radius: 0 4px 4px 0;
+          box-shadow: inset 0px -3px 0px 0px #3bd4b6; }
+          .sign-up-box #sign-up form input[type=submit]:hover {
+            background-color: #19b596; }
+      .sign-up-box #sign-up form .email-message {
+        background-color: #f26c4f;
+        padding: 10px 0;
+        width: 691px;
+        border-radius: 4px;
+        margin: 10px auto;
+        visibility: hidden; }
+        .sign-up-box #sign-up form .email-message h6 {
+          color: #fff;
+          display: inline-block; }
+        .sign-up-box #sign-up form .email-message img {
+          position: relative;
+          top: 4px; }
 
 #vel-bibendum {
   text-align: center; }
@@ -294,5 +307,178 @@ sup {
       padding: 0 4px; }
   #footer p {
     margin-left: 10px; }
+
+@media screen and (max-width: 1439px) {
+  #header h1 {
+    width: 80%;
+    margin: 0 auto; }
+  #header h4 {
+    width: 80%;
+    margin: 25px auto 100px; }
+
+  #ut-sagittis {
+    padding-bottom: 100px; } }
+@media screen and (max-width: 1099px) {
+  h2 {
+    font-size: 30px; }
+
+  #header h4 {
+    margin: 25px auto 50px; }
+  #header .logo {
+    margin: 100px 0 20px 0; }
+  #header a {
+    margin: 50px auto; }
+
+  .page-content {
+    padding-right: 150px; }
+
+  #sidebar {
+    width: 150px; }
+
+  #lorem-dolor .phone {
+    max-height: 500px;
+    margin-top: 100px; }
+  #lorem-dolor .lorem-dolor-text {
+    margin-left: 20px; }
+
+  #gravida .phone {
+    max-height: 500px;
+    margin: 100px 30px 0 20px; }
+
+  #ut-sagittis {
+    padding-bottom: 50px; }
+    #ut-sagittis h6 {
+      margin-top: 100px; }
+
+  .sign-up-box #sign-up h2 {
+    padding: 100px 0 18px 0; }
+  .sign-up-box #sign-up form .email-message {
+    padding: 10px 0; }
+
+  #vel-bibendum h6:first-child {
+    padding-top: 100px; }
+  #vel-bibendum h2 {
+    padding-bottom: 0; }
+  #vel-bibendum .opinion1, #vel-bibendum .opinion2, #vel-bibendum .opinion3, #vel-bibendum .opinion4 {
+    margin: 25px auto; }
+
+  .cta-last-box #cta-last h3 {
+    margin-top: 100px; }
+
+  #footer ul {
+    margin-left: 20px; }
+  #footer button {
+    margin-left: 10px; } }
+@media screen and (max-width: 979px) {
+  #header h1 {
+    font-size: 44px; }
+  #header .logo {
+    margin: 50px 0 20px 0; }
+
+  .page-content {
+    padding: 0; }
+
+  #sidebar {
+    display: none; }
+
+  #lorem-dolor .phone {
+    margin-top: 50px; }
+  #lorem-dolor .lorem-dolor-text {
+    width: 475px; }
+    #lorem-dolor .lorem-dolor-text .down-arrow {
+      margin-bottom: 150px; }
+
+  #gravida .phone {
+    margin: 50px 20px 0 20px; }
+  #gravida .gravida-text {
+    width: 475px; }
+    #gravida .gravida-text .down-arrow {
+      margin-bottom: 150px; }
+
+  #ut-sagittis .person1, #ut-sagittis .person2, #ut-sagittis .person3 {
+    display: block;
+    margin: 50px auto; }
+    #ut-sagittis .person1 img, #ut-sagittis .person2 img, #ut-sagittis .person3 img {
+      margin-bottom: 5px; }
+
+  #vel-bibendum h6:first-child {
+    padding-top: 50px; }
+
+  .cta-last-box #cta-last button {
+    margin: 60px 0; }
+
+  #footer li {
+    padding: 30px 0 40px 0;
+    margin: 0 8px; } }
+@media screen and (max-width: 767px) {
+  #header button {
+    width: 40%; }
+  #header h1 {
+    font-size: 38px; }
+
+  #lorem-dolor {
+    text-align: center; }
+    #lorem-dolor .phone {
+      display: none; }
+    #lorem-dolor .lorem-dolor-text {
+      width: 90%;
+      margin-left: 0; }
+      #lorem-dolor .lorem-dolor-text h6 {
+        margin-top: 50px; }
+      #lorem-dolor .lorem-dolor-text .icon {
+        display: none; }
+      #lorem-dolor .lorem-dolor-text .down-arrow {
+        display: block;
+        margin: 0 auto 100px auto; }
+
+  #gravida {
+    text-align: center; }
+    #gravida .phone {
+      display: none; }
+    #gravida .gravida-text {
+      width: 100%; }
+      #gravida .gravida-text .down-arrow {
+        display: block;
+        margin: 0 auto 100px auto; }
+
+  #ut-sagittis h6 {
+    margin-top: 0; }
+
+  #vel-bibendum .opinion1, #vel-bibendum .opinion2, #vel-bibendum .opinion3, #vel-bibendum .opinion4 {
+    width: 90%; }
+
+  .sign-up-box #sign-up h2 {
+    padding: 50px 0 18px 0; }
+  .sign-up-box #sign-up h4 {
+    padding-bottom: 50px; }
+  .sign-up-box #sign-up form {
+    padding-bottom: 5px; }
+    .sign-up-box #sign-up form .email-message {
+      padding: 10px 0;
+      width: 80%;
+      margin: 0 auto; }
+    .sign-up-box #sign-up form .email-wrapper {
+      width: 80%;
+      border-radius: 4px;
+      margin-bottom: 20px; }
+    .sign-up-box #sign-up form input[type=email] {
+      width: 80%;
+      border-radius: 4px;
+      border: none; }
+    .sign-up-box #sign-up form input[type=submit] {
+      margin-bottom: 20px;
+      border-radius: 4px; }
+
+  #footer {
+    text-align: center; }
+    #footer ul {
+      margin: 10px auto 20px;
+      width: 80%; }
+    #footer li {
+      padding: 5px 0; }
+    #footer button {
+      margin-left: 0; }
+    #footer p {
+      margin-top: 0; } }
 
 /*# sourceMappingURL=styles.css.map */
