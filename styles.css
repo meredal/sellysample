@@ -135,7 +135,7 @@ sup {
   width: 500px; }
   #lorem-dolor .lorem-dolor-text .icon {
     margin: 0 10px 0 30px; }
-  #lorem-dolor .lorem-dolor-text .down-arrow {
+  #lorem-dolor .lorem-dolor-text .arrow-image {
     margin-bottom: 180px; }
 #lorem-dolor .phone {
   margin-top: 140px; }
@@ -146,7 +146,7 @@ sup {
   margin: 209px 30px 0 0; }
 #gravida .gravida-text {
   width: 490px; }
-  #gravida .gravida-text .down-arrow {
+  #gravida .gravida-text .arrow-image {
     margin-bottom: 200px; }
 
 #ut-sagittis {
@@ -385,14 +385,14 @@ sup {
     margin-top: 50px; }
   #lorem-dolor .lorem-dolor-text {
     width: 475px; }
-    #lorem-dolor .lorem-dolor-text .down-arrow {
+    #lorem-dolor .lorem-dolor-text .arrow-image {
       margin-bottom: 150px; }
 
   #gravida .phone {
     margin: 50px 20px 0 20px; }
   #gravida .gravida-text {
     width: 475px; }
-    #gravida .gravida-text .down-arrow {
+    #gravida .gravida-text .arrow-image {
       margin-bottom: 150px; }
 
   #ut-sagittis .person1, #ut-sagittis .person2, #ut-sagittis .person3 {
@@ -427,7 +427,7 @@ sup {
         margin-top: 50px; }
       #lorem-dolor .lorem-dolor-text .icon {
         display: none; }
-      #lorem-dolor .lorem-dolor-text .down-arrow {
+      #lorem-dolor .lorem-dolor-text .arrow-image {
         display: block;
         margin: 0 auto 100px auto; }
 
@@ -437,7 +437,7 @@ sup {
       display: none; }
     #gravida .gravida-text {
       width: 100%; }
-      #gravida .gravida-text .down-arrow {
+      #gravida .gravida-text .arrow-image {
         display: block;
         margin: 0 auto 100px auto; }
 
