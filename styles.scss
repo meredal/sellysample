@@ -160,6 +160,18 @@ sup {
   }
   a {
     text-decoration: none;
+
+    // active class for when it is selected or scrolled past on the page.
+    &.active {
+      background: #16a085;
+      color: #fff;
+      padding: 15px;
+      border-radius: 30px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .sidebar-email-icon {
     margin-top: 80px;
