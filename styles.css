@@ -82,7 +82,7 @@ sup {
     margin-right: 12px; }
   #header .video-btn {
     border: 2px solid #fff;
-    background-color: #22303d;
+    background-color: rgba(0, 0, 0, 0.4);
     margin-left: 12px;
     box-shadow: none; }
     #header .video-btn:hover {
@@ -141,31 +141,31 @@ sup {
   max-width: 900px;
   margin: 0 auto; }
 
-#lorem-dolor .phone, #lorem-dolor .lorem-dolor-text {
-  display: inline-block; }
-#lorem-dolor .lorem-dolor-text {
-  width: 500px; }
-  #lorem-dolor .lorem-dolor-text .icon {
-    margin: 0 10px 0 30px; }
-  #lorem-dolor .lorem-dolor-text .arrow-image {
-    margin-bottom: 180px; }
-#lorem-dolor .phone {
-  margin-top: 140px; }
+#lorem-dolor {
+  padding: 140px 0 100px 0; }
+  #lorem-dolor .phone, #lorem-dolor .lorem-dolor-text {
+    display: inline-block; }
+  #lorem-dolor .lorem-dolor-text {
+    width: 500px; }
+    #lorem-dolor .lorem-dolor-text .icon {
+      margin: 0 10px 0 30px; }
+    #lorem-dolor .lorem-dolor-text .arrow-image {
+      margin-bottom: 180px; }
 
-#gravida .phone, #gravida .gravida-text {
-  display: inline-block; }
-#gravida .phone {
-  margin: 209px 30px 0 0; }
-#gravida .gravida-text {
-  width: 490px; }
-  #gravida .gravida-text .arrow-image {
-    margin-bottom: 200px; }
+#gravida {
+  padding: 109px 0 100px 0; }
+  #gravida .phone, #gravida .gravida-text {
+    display: inline-block; }
+  #gravida .phone {
+    margin-right: 30px; }
+  #gravida .gravida-text {
+    width: 490px; }
+    #gravida .gravida-text .arrow-image {
+      margin-bottom: 200px; }
 
 #ut-sagittis {
   text-align: center;
-  padding-bottom: 206px; }
-  #ut-sagittis h6 {
-    margin-top: 203px; }
+  padding: 103px 0 206px 0; }
   #ut-sagittis .person1, #ut-sagittis .person2, #ut-sagittis .person3 {
     display: inline-block;
     width: 240px;
@@ -244,9 +244,8 @@ sup {
           top: 4px; }
 
 #vel-bibendum {
-  text-align: center; }
-  #vel-bibendum h6:first-child {
-    padding-top: 210px; }
+  text-align: center;
+  padding: 210px 0 100px 0; }
   #vel-bibendum h2 {
     padding-bottom: 45px; }
   #vel-bibendum a {
@@ -272,11 +271,10 @@ sup {
     margin: 31px 0 0 27px; }
 
 .cta-last-box {
-  border-bottom: 1px solid #e1e1e1; }
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 40px; }
   .cta-last-box #cta-last {
     text-align: center; }
-    .cta-last-box #cta-last h3 {
-      margin-top: 140px; }
     .cta-last-box #cta-last h6 {
       line-height: 2; }
     .cta-last-box #cta-last button {
@@ -320,7 +318,7 @@ sup {
   #footer p {
     margin-left: 10px; }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1400px) {
   #header h1 {
     width: 80%;
     margin: 0 auto; }
@@ -347,35 +345,36 @@ sup {
   #sidebar {
     width: 150px; }
 
-  #lorem-dolor .phone {
-    max-height: 500px;
-    margin-top: 100px; }
-  #lorem-dolor .lorem-dolor-text {
-    margin-left: 20px; }
+  #lorem-dolor {
+    padding: 100px 0 50px 0; }
+    #lorem-dolor .phone {
+      max-height: 500px; }
+    #lorem-dolor .lorem-dolor-text {
+      margin-left: 20px; }
 
-  #gravida .phone {
-    max-height: 500px;
-    margin: 100px 30px 0 20px; }
+  #gravida {
+    padding: 50px 0; }
+    #gravida .phone {
+      max-height: 500px;
+      margin: 0 30px 0 20px; }
 
   #ut-sagittis {
-    padding-bottom: 50px; }
-    #ut-sagittis h6 {
-      margin-top: 100px; }
+    padding: 50px 0 50px 0; }
 
   .sign-up-box #sign-up h2 {
     padding: 100px 0 18px 0; }
   .sign-up-box #sign-up form .email-message {
     padding: 10px 0; }
 
-  #vel-bibendum h6:first-child {
-    padding-top: 100px; }
-  #vel-bibendum h2 {
-    padding-bottom: 0; }
-  #vel-bibendum .opinion1, #vel-bibendum .opinion2, #vel-bibendum .opinion3, #vel-bibendum .opinion4 {
-    margin: 25px auto; }
+  #vel-bibendum {
+    padding: 100px 0 50px 0; }
+    #vel-bibendum h2 {
+      padding-bottom: 0; }
+    #vel-bibendum .opinion1, #vel-bibendum .opinion2, #vel-bibendum .opinion3, #vel-bibendum .opinion4 {
+      margin: 25px auto; }
 
-  .cta-last-box #cta-last h3 {
-    margin-top: 100px; }
+  .cta-last-box {
+    padding-top: 50px; }
 
   #footer ul {
     margin-left: 20px; }
@@ -393,28 +392,32 @@ sup {
   #sidebar {
     display: none; }
 
-  #lorem-dolor .phone {
-    margin-top: 50px; }
-  #lorem-dolor .lorem-dolor-text {
-    width: 475px; }
-    #lorem-dolor .lorem-dolor-text .arrow-image {
-      margin-bottom: 150px; }
+  #lorem-dolor {
+    padding: 50px 0 25px 0; }
+    #lorem-dolor .lorem-dolor-text {
+      width: 475px; }
+      #lorem-dolor .lorem-dolor-text .arrow-image {
+        margin-bottom: 150px; }
 
-  #gravida .phone {
-    margin: 50px 20px 0 20px; }
-  #gravida .gravida-text {
-    width: 475px; }
-    #gravida .gravida-text .arrow-image {
-      margin-bottom: 150px; }
+  #gravida {
+    padding: 25px 0; }
+    #gravida .phone {
+      margin: 0 20px 0 20px; }
+    #gravida .gravida-text {
+      width: 475px; }
+      #gravida .gravida-text .arrow-image {
+        margin-bottom: 150px; }
 
-  #ut-sagittis .person1, #ut-sagittis .person2, #ut-sagittis .person3 {
-    display: block;
-    margin: 50px auto; }
-    #ut-sagittis .person1 img, #ut-sagittis .person2 img, #ut-sagittis .person3 img {
-      margin-bottom: 5px; }
+  #ut-sagittis {
+    padding: 25px 0; }
+    #ut-sagittis .person1, #ut-sagittis .person2, #ut-sagittis .person3 {
+      display: block;
+      margin: 50px auto; }
+      #ut-sagittis .person1 img, #ut-sagittis .person2 img, #ut-sagittis .person3 img {
+        margin-bottom: 5px; }
 
-  #vel-bibendum h6:first-child {
-    padding-top: 50px; }
+  #vel-bibendum {
+    padding: 25px 0; }
 
   .cta-last-box #cta-last button {
     margin: 60px 0; }
@@ -453,8 +456,8 @@ sup {
         display: block;
         margin: 0 auto 100px auto; }
 
-  #ut-sagittis h6 {
-    margin-top: 0; }
+  #ut-sagittis {
+    padding-top: 0; }
 
   #vel-bibendum .opinion1, #vel-bibendum .opinion2, #vel-bibendum .opinion3, #vel-bibendum .opinion4 {
     width: 90%; }

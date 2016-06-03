@@ -18,7 +18,7 @@ body {
 h1, h2, h3, h4, h5, h6, a, button, img, ul, li {
   margin: 0;
   padding: 0;
-  color: #363636
+  color: #363636;
 }
 
 button {
@@ -92,6 +92,9 @@ sup {
   background-repeat: no-repeat;
   background-size: 100% auto;
   padding-bottom: 1px;
+  .stripes {
+
+  }
   .logo {
     margin: 124px 0 30px 0;
     padding: 0;
@@ -103,9 +106,10 @@ sup {
   button {
     margin-right: 12px;
   }
+
   .video-btn {
     border: 2px solid #fff;
-    background-color: #22303d;
+    background-color: rgba(0, 0, 0, 0.4);
     margin-left: 12px;
     box-shadow: none;
     &:hover {
@@ -189,6 +193,7 @@ sup {
 }
 
 #lorem-dolor {
+  padding: 140px 0 100px 0;
   .phone, .lorem-dolor-text {
     display: inline-block;
   }
@@ -201,17 +206,15 @@ sup {
       margin-bottom: 180px;
     }
   }
-  .phone {
-    margin-top: 140px;
-  }
 }
 
 #gravida {
+  padding: 109px 0 100px 0;
   .phone, .gravida-text {
     display: inline-block;
   }
   .phone {
-    margin: 209px 30px 0 0;
+    margin-right: 30px;
   }
   .gravida-text {
     width: 490px;
@@ -223,10 +226,7 @@ sup {
 
 #ut-sagittis {
   text-align: center;
-  padding-bottom: 206px;
-  h6 {
-    margin-top: 203px;
-  }
+  padding: 103px 0 206px 0;
   .person1, .person2, .person3 {
     display: inline-block;
     width: 240px;
@@ -328,11 +328,7 @@ sup {
 
 #vel-bibendum {
   text-align: center;
-  h6 {
-    &:first-child {
-      padding-top: 210px;
-    }
-  }
+  padding: 210px 0 100px 0;
   h2 {
     padding-bottom: 45px;
   }
@@ -371,11 +367,9 @@ sup {
 
 .cta-last-box {
   border-bottom: 1px solid #e1e1e1;
+  padding-top: 40px;
   #cta-last {
     text-align: center;
-    h3 {
-      margin-top: 140px;
-    }
     h6 {
       line-height: 2;
     }
@@ -434,7 +428,7 @@ sup {
 
 // breaks at 1400, 1100, 980, 768, 480 px
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1400px) {
   #header {
     h1 {
       width: 80%;
@@ -472,25 +466,23 @@ sup {
     width: 150px;
   }
   #lorem-dolor {
+    padding: 100px 0 50px 0;
     .phone {
       max-height: 500px;
-      margin-top: 100px;
     }
     .lorem-dolor-text {
       margin-left: 20px;
     }
   }
   #gravida {
+    padding: 50px 0;
     .phone {
       max-height: 500px;
-      margin: 100px 30px 0 20px;
+      margin: 0 30px 0 20px;
     }
   }
   #ut-sagittis {
-    padding-bottom: 50px;
-    h6 {
-      margin-top: 100px;
-    }
+    padding: 50px 0 50px 0;
   }
   .sign-up-box {
     #sign-up {
@@ -503,9 +495,7 @@ sup {
     }
   }
   #vel-bibendum {
-    h6:first-child {
-      padding-top: 100px;
-    }
+    padding: 100px 0 50px 0;
     h2 {
       padding-bottom: 0;
     }
@@ -514,11 +504,7 @@ sup {
     }
   }
   .cta-last-box {
-    #cta-last {
-      h3 {
-        margin-top: 100px;
-      }
-    }
+    padding-top: 50px;
   }
   #footer {
     ul {
@@ -529,6 +515,7 @@ sup {
     }
   }
 }
+
 @media screen and (max-width: 979px) {
   #header {
     h1 {
@@ -545,9 +532,7 @@ sup {
     display: none;
   }
   #lorem-dolor {
-    .phone {
-      margin-top: 50px;
-    }
+    padding: 50px 0 25px 0;
     .lorem-dolor-text {
       width: 475px;
       .arrow-image {
@@ -556,8 +541,9 @@ sup {
     }
   }
   #gravida {
+    padding: 25px 0;
     .phone {
-      margin: 50px 20px 0 20px;
+      margin: 0 20px 0 20px;
     }
     .gravida-text {
       width: 475px;
@@ -567,6 +553,7 @@ sup {
     }
   }
   #ut-sagittis {
+    padding: 25px 0;
     .person1, .person2, .person3 {
       display: block;
       margin: 50px auto;
@@ -576,9 +563,7 @@ sup {
     }
   }
   #vel-bibendum {
-    h6:first-child {
-      padding-top: 50px;
-    }
+    padding: 25px 0;
   }
   .cta-last-box {
     #cta-last {
@@ -638,9 +623,7 @@ sup {
     }
   }
   #ut-sagittis {
-    h6 {
-      margin-top: 0;
-    }
+    padding-top: 0;
   }
   #vel-bibendum {
     .opinion1, .opinion2, .opinion3, .opinion4 {

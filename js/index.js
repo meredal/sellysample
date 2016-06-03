@@ -15,7 +15,7 @@ $( document ).ready(function() {
 
 // Add a waypoint to the page-content section and make it so the sidebar sticks to the side of the page when you scroll past the "Waypoint". Add the class to the sidebar to give it a fixed position.
   var stickySidebar = new Waypoint({
-    element: $('#torso')[0],
+    element: $('#content')[0],
     handler: function() {
       // console.log('torso waypoint triggered');
       $('#sidebar').addClass('menu-fixed');
@@ -24,7 +24,7 @@ $( document ).ready(function() {
 
 // Add a waypoint to the header section and make it so the sidebar no longer sticks to the side of the page when you scroll past the "Waypoint". Remove the class that makes it have a fixed position.
   var unStickySidebar = new Waypoint({
-    element: $('#lorem-dolor')[0],
+    element: $('#phoneWaypoint'),
     handler: function() {
       // console.log('header waypoint triggered');
       $('#sidebar').removeClass('menu-fixed');
@@ -33,44 +33,105 @@ $( document ).ready(function() {
   })
 
 // Use waypoints to detect when you're in a new section. As you enter a new section in page content, it should be highlighted on the sidebar.
-  var loremDolor = new Waypoint({
+// TO DO: Find a way to consolidate these waypoints. There should be a way to combine the way I'm calling elements since the add and remove class actions are basically the same every time.
+  var loremDolorDown = new Waypoint({
     element: $('#lorem-dolor')[0],
-    handler: function() {
+    handler: function(down) {
       $('#sidebar .active').removeClass('active');
       $('#sidebar .lorem-dolor').addClass('active');
     }
   })
 
-  var gravida = new Waypoint({
+  var loremDolorUp = new Waypoint({
+    element: $('#lorem-dolor h2')[0],
+    handler: function(up) {
+      $('#sidebar .active').removeClass('active');
+      $('#sidebar .lorem-dolor').addClass('active');
+    }
+  })
+
+  var gravidaDown = new Waypoint({
     element: $('#gravida')[0],
-    handler: function() {
+    handler: function(down) {
       $('#sidebar .active').removeClass('active');
       $('#sidebar .gravida').addClass('active');
     }
   })
 
-  var utSagittis = new Waypoint({
+  var gravidaUp = new Waypoint({
+    element: $('#gravida h2')[0],
+    handler: function(up) {
+      $('#sidebar .active').removeClass('active');
+      $('#sidebar .gravida').addClass('active');
+    }
+  })
+
+  var utSagittisDown = new Waypoint({
     element: $('#ut-sagittis')[0],
-    handler: function() {
+    handler: function(down) {
       $('#sidebar .active').removeClass('active');
       $('#sidebar .ut-sagittis').addClass('active');
     }
   })
 
-  var signUp = new Waypoint({
+  var utSagittisUp = new Waypoint({
+    element: $('#ut-sagittis h2')[0],
+    handler: function(up) {
+      $('#sidebar .active').removeClass('active');
+      $('#sidebar .ut-sagittis').addClass('active');
+    }
+  })
+
+  var signUpDown = new Waypoint({
     element: $('#sign-up')[0],
-    handler: function() {
+    handler: function(down) {
       $('#sidebar .active').removeClass('active');
       $('#sidebar .sign-up').addClass('active');
     }
   })
 
-  var velBibendum = new Waypoint({
+  var signUpUp = new Waypoint({
+    element: $('#sign-up h2')[0],
+    handler: function(up) {
+      $('#sidebar .active').removeClass('active');
+      $('#sidebar .sign-up').addClass('active');
+    }
+  })
+
+  var velBibendumDown = new Waypoint({
     element: $('#vel-bibendum')[0],
-    handler: function() {
+    handler: function(down) {
       $('#sidebar .active').removeClass('active');
       $('#sidebar .vel-bibendum').addClass('active');
     }
   })
+
+  var velBibendumUp = new Waypoint({
+    element: $('#vel-bibendum h2')[0],
+    handler: function(up) {
+      $('#sidebar .active').removeClass('active');
+      $('#sidebar .vel-bibendum').addClass('active');
+    }
+  })
+
+  // Use jQuery to override the menu items so they cleanly scroll to that section.
+  // Add a jquery click handler to every menu item. when you click on a menu item, it should:
+    // prevent the normal click functionality (hint: return: false)
+    // add the classname .active to that menu item
+    // use jquery.scrollTo to scroll the page to the section that the menu item points to
+
+  $("#sidebar a").on("click", function(){
+    var section = $(this).attr("href");
+    // var className = $(this).attr("class");
+    // var activeClassName = $('.' + className)
+
+    $(window).scrollTo(section, {duration:800});
+
+    // $('#sidebar .active').removeClass('active');
+    // activeClassName.addClass('active');
+
+    return false;
+  });
+
 
 });
