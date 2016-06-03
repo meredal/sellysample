@@ -219,6 +219,7 @@ sup {
           border-radius: 4px 0 0 4px;
           padding-left: 70px; }
         .sign-up-box #sign-up form input[type=submit] {
+          cursor: pointer;
           height: 71px;
           text-transform: uppercase;
           color: #fff;

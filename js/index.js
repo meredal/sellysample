@@ -13,6 +13,7 @@ $( document ).ready(function() {
     return false;
   });
 
+
 // Add a waypoint to the page-content section and make it so the sidebar sticks to the side of the page when you scroll past the "Waypoint". Add the class to the sidebar to give it a fixed position.
   var stickySidebar = new Waypoint({
     element: $('#content')[0],
@@ -114,24 +115,35 @@ $( document ).ready(function() {
     }
   })
 
-  // Use jQuery to override the menu items so they cleanly scroll to that section.
-  // Add a jquery click handler to every menu item. when you click on a menu item, it should:
-    // prevent the normal click functionality (hint: return: false)
-    // add the classname .active to that menu item
-    // use jquery.scrollTo to scroll the page to the section that the menu item points to
-
+// funtion to scrollto the correct section on the sidebar when you click on it.
   $("#sidebar a").on("click", function(){
     var section = $(this).attr("href");
-    // var className = $(this).attr("class");
-    // var activeClassName = $('.' + className)
-
     $(window).scrollTo(section, {duration:800});
-
-    // $('#sidebar .active').removeClass('active');
-    // activeClassName.addClass('active');
-
     return false;
   });
 
+// When you enter an email, make sure that it is a valid email, and upon submit, show the user a message that the email has successfully been saved.
+  function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+  }
+
+  $("#form").on("click", ".submit-email-btn", function(){
+    event.preventDefault();
+    $("#result").text("");
+    var email = $("#email").val();
+    if (validateEmail(email)) {
+      $("form").css("visibility", "hidden");
+      $(".email-message").css("visibility", "visible");
+      $(".email-message").css("background-color", "#19b596");
+      $("#result").text("Thank you for signing up! " + email + " is valid.");
+      $("#result").css("color", "white");
+    } else {
+      $(".email-message").css("visibility", "visible");
+      $("#result").text(email + " is not valid.");
+      $("#result").css("color", "white");
+    }
+    return false;
+  });
 
 });
