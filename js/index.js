@@ -133,7 +133,6 @@ $( document ).ready(function() {
     $("#result").text("");
     var email = $("#email").val();
     if (validateEmail(email)) {
-      $("form").css("visibility", "hidden");
       $(".email-message").css("visibility", "visible");
       $(".email-message").css("background-color", "#19b596");
       $("#result").text("Thank you for signing up! " + email + " is valid.");
